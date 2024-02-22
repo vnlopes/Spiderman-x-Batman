@@ -269,6 +269,15 @@ header {
     max-height: 1000px;
   } 
 
+  .buttons button svg{
+    height: 20px;
+  }
+
+  .buttons button{
+    width: 30px;
+    height: 30px;
+  }
+
   .carousel img{
     height: 100px;
   }
