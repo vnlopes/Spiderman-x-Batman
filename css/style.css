@@ -138,8 +138,56 @@ header {
     font-size: 0.8rem;
 }
 
-@media (max-width: 600px){
-  body{
-    background-image: none;
+@media (max-width: 800px){
+
+  .btts span:hover{
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
+
+  .btts{
+    line-height: 30px;
+    font-size: 1.8rem;
   }
+
+  .title{
+    font-size: 1.5rem;
+  }
+
+  .icons img{
+    top: -45px;
+    height: 250px;
+  }
+
+  .icons{
+    margin-top: 0;
+  }
+
+  .icons svg{
+    height: 20px;
+  }
+
+  main{
+    min-width: 700px;
+  }
+
+  body{
+    background-size: 900px;
+  }
+
+.what{
+  font-size: calc(1.5rem);
+}
+
+.text{
+  font-size: 1rem;
+  width: 200px;
+  line-height: 20px;
+}
+
+.names{
+  font-size: 0.5rem;
+}
+
 }
