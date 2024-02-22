@@ -278,14 +278,13 @@ header {
 @media (max-width: 1200px) {
 
   .history{
-    margin-left: -300px;
     width: 400px;
     font-size: 0.7rem;
     line-height: 20px;
   }
 
   body {
-    background-position-y: top;
+    background-position-y: 300px;
     max-height: 400px;
   } 
 
