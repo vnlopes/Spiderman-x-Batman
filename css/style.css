@@ -1,0 +1,139 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/pecita");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  transition: 0.3s;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  background-color: #060606;
+  min-height: 2179px;
+  justify-content: center;
+  background-image: url(..//images/color\ background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main {
+  transition: 1s;
+  flex-direction: column;
+  min-width: 1440px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.man {
+  font-family: "Pecita", sans-serif;
+}
+
+.x {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+}
+
+.spider{
+  margin-right: 7px;
+}
+
+.spider,
+.bat {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 900;
+}
+
+.icons {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.icons svg {
+  fill: white;
+  height: 50px;
+  width: 50px;
+}
+
+.icons img {
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  top: -114px;
+}
+
+
+/* Main */
+
+.down{
+    margin-top: 90px;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    width: 85%;
+}
+
+.btts span:hover{
+    font-size: 5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
+
+.btts span{
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btts{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 90px;
+}
+
+.right{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.what{
+    font-size: 3rem;
+    font-family: 'Cocogoose', sans-serif;
+}
+
+.text{
+    font-family: 'Inter', sans-serif;
+    width: 400px;
+    font-size: 2rem;
+    line-height: 35px;
+}
+
+.names{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+}
