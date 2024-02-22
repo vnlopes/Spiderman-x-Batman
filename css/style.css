@@ -263,10 +263,30 @@ header {
   filter: drop-shadow(rgb(255, 255, 255) 0px 0px 5px);
 }
 
+.history{
+  width: 1000px;
+  max-width: 90%;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 2rem;
+  margin-top: 60px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-left: -100px;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+
+  .history{
+    margin-left: -300px;
+    width: 400px;
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
+
   body {
-    max-height: 1000px;
+    background-position-y: top;
+    max-height: 400px;
   } 
 
   .buttons button svg{
@@ -279,11 +299,11 @@ header {
   }
 
   .carousel img{
-    height: 100px;
+    height: 200px;
   }
 
   .carousel{
-    height: 100px;
+    height: 204px;
   }
   
   .fade-left, .fade-right{
