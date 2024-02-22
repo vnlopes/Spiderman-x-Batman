@@ -1,22 +1,28 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/pecita");
 
+
 * {
   margin: 0;
   padding: 0;
 }
 
+
 body {
+  z-index: -3;
+  overflow-x: hidden;
   transition: 0.3s;
   position: relative;
   display: flex;
   background-color: #060606;
   min-height: 2179px;
-  justify-content: center;
+  align-items: center;
   background-image: url(..//images/color\ background.png);
   background-repeat: no-repeat;
   background-position: center center;
+  flex-direction: column;
 }
+
 
 main {
   transition: 1s;
@@ -26,6 +32,7 @@ main {
   align-items: center;
 }
 
+
 header {
   width: 100%;
   display: flex;
@@ -33,30 +40,36 @@ header {
   align-items: center;
 }
 
+
 .title {
   margin-top: 50px;
   font-size: 2.5rem;
   color: white;
 }
 
+
 .man {
   font-family: "Pecita", sans-serif;
 }
+
 
 .x {
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
 }
 
-.spider{
+
+.spider {
   margin-right: 7px;
 }
+
 
 .spider,
 .bat {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 900;
 }
+
 
 .icons {
   position: relative;
@@ -67,11 +80,13 @@ header {
   flex-direction: row-reverse;
 }
 
+
 .icons svg {
   fill: white;
   height: 50px;
   width: 50px;
 }
+
 
 .icons img {
   height: 600px;
@@ -83,120 +98,259 @@ header {
 
 /* Main */
 
-.down{
-    margin-top: 90px;
-    color: white;
-    justify-content: space-between;
-    display: flex;
-    width: 85%;
+
+.down {
+  margin-top: 90px;
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  width: 85%;
 }
 
-.btts span:hover{
-    font-size: 5rem;
+
+.btts span:hover {
+  font-size: 5rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+}
+
+
+.btts span {
+  transition: 0.3s;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.btts {
+  display: flex;
+  flex-direction: column;
+  font-family: "Cocogoose", sans-serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 90px;
+}
+
+
+.right {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.what {
+  font-size: 3rem;
+  font-family: "Cocogoose", sans-serif;
+}
+
+
+.text {
+  font-family: "Inter", sans-serif;
+  width: 400px;
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+
+.names {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+}
+
+
+.carousel{
+  background: linear-gradient(45deg, rgba(42,13,126,1) 0%, rgba(149,25,25,1) 100%);
+  border-top: 1px solid;
+  justify-content: center;
+  display: flex;
+  margin-top: 30vh;
+  min-width: 100vw;
+  height: 510px;
+  border: 0 1px 0 1px solid black;
+  position: relative;
+  z-index: -2;
+  align-items: center;
+}
+
+
+.carousel img{
+  position: absolute;
+  z-index: -2;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.fade-right{
+  z-index: -1;
+  background: linear-gradient(270deg, rgba(0,0,0,1) 4%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  height: 100%;
+  width: 700px;
+  right: 0;
+}
+
+
+.fade-left{
+  z-index: -1;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  height: 100%;
+  width: 700px;
+}
+
+
+.spider-c {
+  margin-right: 7px;
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 900;
+}
+
+
+.man-c {
+  font-family: "Pecita", sans-serif;
+}
+
+
+.spider-c, .man-c{
+  color: white;
+  font-size: 2rem;
+}
+
+
+.name-carousel{
+  position: absolute;
+  top: 30px;
+}
+
+
+.buttons{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.buttons button{
+  background-color: rgba(255, 255, 255, 0.144);
+  border: 1px solid rgba(255, 255, 255, 0.589);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button svg{
+  fill: white;
+}
+
+.buttons button:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(rgb(255, 255, 255) 0px 0px 5px);
+}
+
+
+@media (max-width: 800px) {
+  body {
+    max-height: 1000px;
+  } 
+
+  .carousel img{
+    height: 100px;
+  }
+
+  .carousel{
+    height: 100px;
+  }
+  
+  .fade-left, .fade-right{
+    display: none;
+  }
+
+
+  .btts span:hover {
+    font-size: 2rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
-}
+  }
 
-.btts span{
-    transition: 0.3s;
-    cursor: pointer;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-.btts{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 500;
-    font-size: 4.5rem;
-    line-height: 90px;
-}
+  .spider {
+    margin-right: 5px;
+  }
 
-.right{
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-}
 
-.what{
-    font-size: 3rem;
-    font-family: 'Cocogoose', sans-serif;
-}
-
-.text{
-    font-family: 'Inter', sans-serif;
-    width: 400px;
-    font-size: 2rem;
-    line-height: 35px;
-}
-
-.names{
-    font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
-}
-
-@media (max-width: 800px){
-
-  .btts span:hover{
-    font-size: 2rem;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: white;
-}
-
-.spider{
-  margin-right: 5px;
-}
-
-  .btts{
+  .btts {
     line-height: 30px;
     font-size: 1.8rem;
   }
 
-  .title{
+
+  .title {
     font-size: 1.5rem;
   }
 
-  .icons img{
+
+  .icons img {
     top: -45px;
     height: 250px;
   }
 
-  .icons{
+
+  .icons {
     margin-top: 0;
   }
 
-  .icons svg{
+
+  .icons svg {
     height: 20px;
   }
 
-  main{
+
+  main {
     min-width: 700px;
   }
 
-  body{
+
+  body {
     background-size: 900px;
   }
 
-.what{
-  font-size: calc(1.5rem);
+
+  .what {
+    font-size: calc(1.5rem);
+  }
+
+
+  .text {
+    font-size: 1rem;
+    width: 200px;
+    line-height: 20px;
+  }
+
+
+  .names {
+    font-size: 0.5rem;
+  }
 }
 
-.text{
-  font-size: 1rem;
-  width: 200px;
-  line-height: 20px;
-}
 
-.names{
-  font-size: 0.5rem;
-}
-
-}
-
-@media (max-width: 600px){
-  .down{
+@media (max-width: 600px) {
+  .down {
     width: 300px;
     flex-direction: column;
     align-items: flex-start;
@@ -204,9 +358,22 @@ header {
     gap: 30px;
   }
 
-  main{
-    min-width: 500px;
+
+  main {
+    min-width: 400px;
     align-items: center;
   }
+}
 
+
+
+
+::-webkit-scrollbar-thumb{
+  background-color: #B11313;
+  width: 1px;
+}
+
+
+::-webkit-scrollbar{
+  width: 3px;
 }
