@@ -137,3 +137,9 @@ header {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
 }
+
+@media (max-width: 600px){
+  body{
+    background-image: none;
+  }
+}
