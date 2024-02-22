@@ -278,7 +278,9 @@ header {
 @media (max-width: 1200px) {
 
   .history{
-    width: 400px;
+    display: none;
+    align-self: center;
+    width: 300px;
     font-size: 0.7rem;
     line-height: 20px;
   }
