@@ -166,28 +166,33 @@ header {
 
 
 .carousel{
-  background: linear-gradient(45deg, rgba(42,13,126,1) 0%, rgba(149,25,25,1) 100%);
-  border-top: 1px solid;
   justify-content: center;
   display: flex;
   margin-top: 30vh;
-  min-width: 100vw;
-  height: 510px;
-  border: 0 1px 0 1px solid black;
+  width: 1440px;
+  max-width: 100vw;
+  height: 480px;
   position: relative;
   z-index: -2;
   align-items: center;
 }
 
+#pic-bat{
+}
 
 .carousel img{
-  position: absolute;
-  z-index: -2;
-  height: 500px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+.picheroes{
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+  display: flex;
+}
 
 .fade-right{
   z-index: -1;
@@ -209,7 +214,7 @@ header {
 }
 
 
-.spider-c {
+.spider-c, .batman-c{
   margin-right: 7px;
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 900;
@@ -221,7 +226,7 @@ header {
 }
 
 
-.spider-c, .man-c{
+.spider-c, .man-c, .batman-c{
   color: white;
   font-size: 2rem;
 }
@@ -264,28 +269,57 @@ header {
 }
 
 .history{
-  width: 1000px;
+  width: 999.98px;
   max-width: 90%;
   font-family: 'Inter', sans-serif;
   color: white;
   font-size: 2rem;
-  margin-top: 60px;
+  margin-top: 80px;
   line-height: 50px;
   font-weight: 500;
-  margin-left: -100px;
+}
+
+.text-h{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#spider{
+  transition: 0.3;
+}
+
+#bat{
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.remove{
+  margin-left: 0;
+}
+
+.remove{
+  opacity: 0;
+  transition: 1s;
 }
 
 @media (max-width: 1200px) {
 
+  .picheroes{
+    max-width: 100%;
+    z-index: -6;
+    position: absolute;
+  }
+
   .history{
-    display: none;
     align-self: center;
-    width: 300px;
+    width: 400px;
     font-size: 0.7rem;
     line-height: 20px;
   }
 
   body {
+    align-items: center;
     background-position-y: 300px;
     max-height: 400px;
   } 
@@ -299,18 +333,20 @@ header {
     height: 30px;
   }
 
+
   .carousel img{
     height: 200px;
+    width: 100vw;
   }
 
   .carousel{
+    width: 600px;
     height: 204px;
   }
   
   .fade-left, .fade-right{
-    display: none;
+    width: 100px;
   }
-
 
   .btts span:hover {
     font-size: 2rem;
@@ -377,6 +413,7 @@ header {
     font-size: 0.5rem;
   }
 }
+
 
 
 @media (max-width: 600px) {

@@ -70,7 +70,7 @@
 
     <div class="carousel">
       <div class="buttons">
-        <button class="left">
+        <button onclick="back()" class="left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -83,7 +83,7 @@
             ></path>
           </svg>
         </button>
-        <button class="right">
+        <button onclick="next()" class="right">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -98,15 +98,30 @@
         </button>
       </div>
       <div class="name-carousel">
-        <span class="spider-c">SPIDER</span><span class="man-c">man</span>
+        <div id="bat">
+          <span class="batman-c">BAT</span><span class="man-c">man</span>
+        </div>
+      </div>
+      <div class="name-carousel">
+        <div id="spider">
+          <span class="spider-c">SPIDER</span><span class="man-c">man</span>
+        </div>
       </div>
       <div class="fade-left"></div>
       <div class="fade-right"></div>
-      <img src="images/spiderman-lyingdown.png" alt="" />
+      
+      <div class="picheroes">
+        
+      <img id="pic-spider" src="images/spiderman-lyingdown.png" alt="" />
+      <img id="pic-bat" src="images/the-batman.jpg" alt="">
+      </div>
     </div>
-    <div class="history">
-      Peter Parker, um estudante do ensino médio, é picado por uma aranha radioativa e ganha poderes sobrehumanos. Após a morte de seu Tio Ben, ele aprende que "Com grandes poderes, vêm grandes responsabilidades" e se torna o Homem-Aranha. Lutando para equilibrar sua vida pessoal com suas responsabilidades de herói, Peter enfrenta diversos vilões, incluindo o Duende Verde, o maior desafio que testa suas relações e valores. Apesar das dificuldades, ele persiste em proteger Nova York, provando que a coragem e a responsabilidade de uma pessoa podem inspirar mudanças significativas.
-
+    <div class="text-h">
+      <div class="history">
+        Peter Parker, um estudante do ensino médio, é picado por uma aranha radioativa e ganha poderes sobrehumanos. Após a morte de seu Tio Ben, ele aprende que "Com grandes poderes, vêm grandes responsabilidades" e se torna o Homem-Aranha. Lutando para equilibrar sua vida pessoal com suas responsabilidades de herói, Peter enfrenta diversos vilões, incluindo o Duende Verde, o maior desafio que testa suas relações e valores. Apesar das dificuldades, ele persiste em proteger Nova York, provando que a coragem e a responsabilidade de uma pessoa podem inspirar mudanças significativas.
+  
+      </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
