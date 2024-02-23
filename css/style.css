@@ -177,8 +177,6 @@ header {
   align-items: center;
 }
 
-#pic-bat{
-}
 
 .carousel img{
   height: 100%;
@@ -187,12 +185,11 @@ header {
 }
 
 .picheroes{
-  position: absolute;
-  height: 100%;
+  width: 100%;
   overflow: hidden;
   z-index: -2;
+  position: absolute;
   display: flex;
-  flex-wrap: wrap-reverse;
 }
 
 .fade-right{
@@ -287,20 +284,21 @@ header {
 }
 
 #spider{
-  transition: 0.3;
+  transition: 0.7;
 }
 
 #bat{
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 
-.remove{
-  margin-left: 0;
-}
-
-.remove{
+.zero{
   opacity: 0;
+}
+
+.remove{
+  display: flex;
+  justify-content: flex-end;
   transition: 1s;
 }
 
