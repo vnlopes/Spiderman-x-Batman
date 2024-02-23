@@ -192,6 +192,7 @@ header {
   overflow: hidden;
   z-index: -2;
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 .fade-right{
