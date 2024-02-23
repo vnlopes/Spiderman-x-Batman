@@ -322,6 +322,8 @@ header {
 
 @media (max-width: 1200px) {
 
+  
+
   .picheroes{
     max-width: 100%;
     z-index: -6;
@@ -335,12 +337,16 @@ header {
     line-height: 20px;
   }
 
+  .main-bg{
+    width: 100vw;
+  }
 
   .bg-gradient{
     width: 80%;
   }
 
   body {
+    overflow-x: hidden;
     align-items: center;
     min-height: 1300px;
   } 
