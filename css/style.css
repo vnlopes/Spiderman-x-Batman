@@ -322,6 +322,7 @@ header {
   }
 
   .history{
+    margin-top: 200px;
     align-self: center;
     width: 400px;
     font-size: 0.7rem;
