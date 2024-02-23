@@ -17,12 +17,18 @@ body {
   background-color: #060606;
   max-height: 2179px;
   align-items: center;
-  background-image: url(..//images/color\ background.png);
-  background-repeat: no-repeat;
-  background-position: center center;
   flex-direction: column;
-}
+} 
 
+.main-bg{
+  width: 1440px;
+  position: absolute;
+  height: 100%;
+  z-index: -4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 main {
   transition: 1s;
@@ -279,6 +285,7 @@ header {
 }
 
 .text-h{
+  justify-content: flex-start;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -328,9 +335,13 @@ header {
     line-height: 20px;
   }
 
+
+  .bg-gradient{
+    width: 80%;
+  }
+
   body {
     align-items: center;
-    background-position-y: 300px;
     min-height: 1300px;
   } 
 
@@ -400,12 +411,6 @@ header {
   main {
     min-width: 700px;
   }
-
-
-  body {
-    background-size: 900px;
-  }
-
 
   .what {
     font-size: calc(1.5rem);
