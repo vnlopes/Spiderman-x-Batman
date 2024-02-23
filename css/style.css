@@ -338,11 +338,11 @@ header {
   }
 
   .main-bg{
-    width: 100%;
+    width: 100vw;
   }
 
   .bg-gradient{
-    width: 160vw;
+    width: 100vw;
     object-fit: cover;
   }
 
