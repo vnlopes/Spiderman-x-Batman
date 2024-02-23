@@ -342,7 +342,8 @@ header {
   }
 
   .bg-gradient{
-    width: 80%;
+    width: 100%;
+    object-fit: cover;
   }
 
   body {
