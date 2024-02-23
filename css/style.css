@@ -175,6 +175,7 @@ header {
   position: relative;
   z-index: -2;
   align-items: center;
+  filter: drop-shadow(black 10px 1px 10px);
 }
 
 
@@ -267,6 +268,7 @@ header {
 }
 
 .history{
+  position: absolute;
   width: 999.98px;
   max-width: 90%;
   font-family: 'Inter', sans-serif;
@@ -293,6 +295,15 @@ header {
 }
 
 .zero{
+  opacity: 0;
+}
+
+#spider-text{
+  transition: 0.3s;
+}
+
+#bat-text{
+  transition: 0.3s;
   opacity: 0;
 }
 
